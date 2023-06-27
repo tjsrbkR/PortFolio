@@ -151,7 +151,7 @@ aside {
     padding: 5px 0;
 }
 .global h2 a img{
-    width: 44px;
+    width: 60px;
 }
 .global .gnb {
     /* 플렉스 */
@@ -207,20 +207,20 @@ aside {
     position: relative;
     z-index: -1;
     width: 100%;
+    overflow: hidden;
+    height: 600px;
 }
 
 .slider video:nth-child(1) {
-    width: 1920px;
-    height: 642px;
     z-index: -1;
+    width: 100%;
 }
 
 .slider video:nth-child(2) {
-    width: 1700px;
-    height: 567px;
     position: absolute;
-    top: 50px;
-    left: 90px;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -407,6 +407,7 @@ main{
     padding: 5px;
     color: #000;
     cursor: pointer;
+    
 }
 /* Section 02 */
 .real_title {
@@ -436,7 +437,7 @@ main{
 }
 
 .real_time ul li {
-    margin-bottom: 20px;
+    margin: 15px 0;
     cursor: pointer;
     font-size: 1.7rem;
     color: #393939;
@@ -463,7 +464,7 @@ main{
     background-color :inherit;
 }
 .real_time ul li:nth-child(6) {
-    margin-bottom: 0;
+    margin-bottom: 60px;
 }
 
 .real_time ul li video {
@@ -487,7 +488,7 @@ main{
 
 .real_time ul li:nth-child(1) {
     width: 234px;
-    height: 80px;
+    height: 120px;
 }
 
 .real_time video {
@@ -506,6 +507,12 @@ main{
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
+    position: absolute;
+    left: 7%;
+    bottom: 21%;
+    background-color: #000;
+    color: #fff;
+
 }
 
 
@@ -544,9 +551,6 @@ main{
     height: 375px;
 }
 
-.caxa_sns+p {
-    font-size: 2rem;
-}
 
 .caxa .caxa_sns ul:first-child {
     display: flex;
@@ -582,10 +586,11 @@ main{
     margin-bottom: 0;
 }
 
-.caxa>p {
+.caxa_sns+.more {
     text-align: right;
     padding-right: 80px;
     margin-top: 28px;
+    width: 100%;
 }
 .caxa_sns ul li{
     position: relative;
