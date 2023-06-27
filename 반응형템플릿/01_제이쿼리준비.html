@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 기본 설정문서</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <!-- 1. 제이쿼리 코어파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 2. 제이쿼리 CDN 방식 이용 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        body{
+            font-family: "Noto Sans KR",sans-serif;
+            color: #1b1b1b;
+        }
+        /* 1. header */
+        .header{
+            height: 60px;
+            line-height: 60px;
+            background-color: red;
+        }
+        /* 2.Slider */
+        .slider{
+            height: 520px;
+            line-height: 520px;
+            background-color: orange    ;
+        }
+        /* 3. Conttents */
+        .content{
+            height: 500px;
+            background-color: green;
+        }
+        .display_section,
+        .promotion_section,
+        .work_section,
+        .blog_section,
+        .contact_section{
+            height: 100px;
+            line-height: 100px;
+        }
+        .display_section{
+            background-color: pink;
+        }
+        .promotion_section{
+            background-color: blue;
+        }
+        .work_section{
+            background-color: purple;
+        }
+        .blog_section{
+            background-color: yellow;
+        }
+        .contact_section{
+            background-color: orangered;
+        }
+        
+
+        /* 4.  */
+        .footer{
+            height: 80px;
+            line-height: 80px;
+            background-color: skyblue;
+        }
+    </style>    
+</head>
+<body>
+    <div id="wrap">
+        <!-- <Header> -->
+        <header class="header">
+            1.로고와 메뉴가 배치 | <br>
+            모바일  + 태블릿 = > 햄버거 버튼 GNB 메뉴 출력(제이쿼리 사용)
+        </header>
+        <!-- </Header> -->
+        <!-- 2. Slider -->
+        <article class="slider">
+            2.슬라이더 영역 <br>
+            사이트 아이덴티티 이미지가 표현되는 영역 = 키비쥬얼 이미지
+            #. 가로 전체 너비 사용
+        </article>
+        <!-- /Slider -->
+        <!-- 3. Contents -->
+        <section class="content">
+            <!-- 3-1 Display -->
+            <section class="display_section">
+                3-1. 디스플레이 영역<br>
+                타이틀, 내용이 들어감
+                모바일 + 태블릿 = > 세로배치, PC => 가로배치
+            </section>
+            <!-- /3-1. Display -->
+            <!-- 3-2. Promotion -->
+            <section class="promotion_section">
+                3-2. 프로모션 영역
+                아이콘, 타이틀, 간단한 내용, 광고를 위한 영역
+                흥미를 위해 아이콘등을 배치 => 클릭을 유도
+                모바일 => 세로배치, 태블릿 + PC => 가로배치
+                
+            </section>
+            <!-- /3-2. Promotion -->
+            <hr class="divider">
+
+            <!-- 3-3. work -->
+            <section class="work_section">
+                3-3. 최근작업 영역 => 홍보상품, 포트폴리오
+                최근에 작업한 작업물을 보여주기 위한 영역
+                최대한 잘 보이도록 퀄리티 높은 이미지 사용
+                모바일 => 세로배치, 태블릿 + PC => 가로배치
+            </section>
+            <!-- /3-3. work -->
+
+            <!-- 3-4. Blog -->
+            <section class="blog_section">
+                3-4. 블로그 영역 => 게시판, 공지사항, 뉴스 등등
+                최근에 작성한 글들을 보여주는 영역
+                모바일 => 세로배치, 태블릿 + PC => 가로배치
+            </section>
+            <!-- /3-4. Blog -->
+            <!-- 3-5. Contact -->
+            <section class="contact_section">
+                3-5. 연락처 영역
+                웹 사이트 관리자에게 연락하기 위한 영역
+                모바일 => 세로배치, 태블릿 + PC => 가로배치
+            </section>
+            <!-- /3-5. Contact -->
+        </section>
+        <!-- /Contents -->
+        <!-- <Footer> -->
+            <footer class="footer">
+                4. 푸터 영역
+                웹사이트 저작권, 회사 주소, 회사 지도, 로고등을 보여줌
+            </footer>
+        <!-- </Footer> -->
+    </div>
+</body>
+</html>

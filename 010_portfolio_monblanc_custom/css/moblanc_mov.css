@@ -1,0 +1,641 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
+/* Safe Area */
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Header */
+#wrap header {
+    height: 700px;
+    background-image: url("https://www.jomalone.co.kr/media/export/cms/campaigns/FY23_Brit_Collection/Brit-23_LP/DT_Brit_LP_Hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 24px;
+
+
+}
+/* Logo, GNB */
+header .logo_gnb_left {
+    width: 1170px;
+    float: left;
+}
+
+header .logo a{
+    width: 155px;
+    float: left;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    float: right;
+
+}
+
+header .gnb {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header .gnb li {
+    margin-top: 24px;
+    margin-left: 24px;
+    float: left;
+}
+
+header .gnb li a:hover {
+    color: #d1d1d1;
+    transition: all 0.5s;
+}
+
+/* Search Btn */
+header .search {
+    width: 110px;
+    margin-top: 24px;
+    text-align: right;
+    float: right;
+}
+
+/* ImageText Deco */
+header .img_deco {
+    padding-left: 20px;
+    padding-top: 230px;
+}
+header .img_deco h3{
+    font-size: 55px;
+    color: #fff;
+    font-weight: 600;
+
+}
+header .img_deco h2 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 700;
+    /* margin-top: 230px; */
+    line-height: 98px;
+    letter-spacing: -3px;
+}
+
+header .img_deco p {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+header .img_deco button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(33, 33, 33);
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+header .img_deco button a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Section CardBox */
+.card_box {
+    background-color: #dcdcdc;
+}
+
+/* 3단 CardBox */
+.card_box .card_view {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    margin-right: 40px;
+    float: left;
+    cursor: pointer;
+
+    /* 포지션 3단 CaedBox 겹치기 */
+    position: relative;
+    left: 0;
+    top: -80px;
+    z-index: 1;
+}
+.card_view:hover .selo{
+    opacity: 0.6;
+    transition: all 0.5s;
+}
+.card_view img{
+    width: 100%;
+    height: 500px;
+}
+.card_view .selo{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #042453;
+    line-height: 2;
+    opacity: 0;
+}
+.card_view .selo p{
+    position: absolute;
+    top: 45%;
+    padding: 50px;
+    padding-top: 0;
+
+}
+/* CardBox Text */
+.card_box_info {
+    padding-bottom: 60px;
+}
+
+.card_box_info h2 {
+    font-size: 12px;
+    color: #807f7f;
+    font-weight: 400;
+    float: left;
+}
+
+.card_box_info h2>span {
+    color: #373636;
+    font-weight: 500;
+}
+
+.card_box_info p {
+    font-size: 18px;
+    color: #807f7f;
+    font-weight: 600;
+    float: right;
+    cursor: pointer;
+
+}
+
+.card_box_info p>img {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+/* Section ABOUTUS */
+.about_us {
+    padding: 100px 0 140px;
+    background-color: #fcf9ee;
+    height: 934px;
+    position: relative;
+}
+
+.about_us .about_us_text {
+    color: #808080;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+.line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid rgb(86, 86, 86);
+    margin-bottom: 60px;
+    /* 데코라인 가운데 오게 하기 */
+    margin: 0 auto;
+}
+.about_us_contents{
+    position: relative;
+    width: 100%;
+}
+.about_img_container{
+    width: 100%;
+    margin-left: 80px;
+}
+.about_us .about_us_tab {
+    margin-top: 60px;
+    display: flex;
+}
+.about_us_tab nav{
+    margin-top: 15px;
+}
+.about_us_tab h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.about_us_tab nav {
+    border-bottom: 1px solid #000;
+    margin-bottom: 60px;
+    position: relative;
+
+}
+.about_us_li span{
+    margin: 30px 0;
+    font-size: 23px;
+    margin-right: 65px;
+    float: left;
+    cursor: pointer;
+}
+.text_box{
+    position: absolute;
+    left: 0;
+    top: 130%;
+    height: 100%;
+}
+.circle{
+    position: absolute;
+    background-color: #454545;
+    width: 10px;
+    height: 10px;
+    left: 13%;
+    top: 66.6%;
+    border-radius: 5px;
+}
+.on {
+    color: #ccc;
+    transition: all 0.3s;
+}
+.about_text{
+    line-height: 2;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #808080;
+}
+.circle + p{
+    margin-top: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -120%;
+}
+.about_img_box{
+    opacity: 0;
+    transition: all 0.5s;
+    display: flex;
+    position: absolute;
+}
+.about_us_img{
+    width: 290px;
+    height: 500px;
+    margin-left: 40px;
+}
+.about_img_box>div:first-child{
+    margin-left: 0;
+}
+.about_us_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Article MOV - 추가 코딩*/
+.move-container {
+    text-align: center;
+    position: relative;
+}
+.move-info{
+    position:absolute;
+    left: 27%;
+    top: 15%;
+    z-index: 1;
+    line-height: 2;
+}
+.move-info h4{
+    font-size: 46px;
+    font-weight: 600;
+    /* font-family:"",sans-serif; */
+    color: #000;
+}
+.move-info p {
+    color: #fff;
+}
+
+.mov{
+    background-image: url(../images/mov_back.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    height: 500px;
+    background-position: center;
+    opacity: 0.7;
+}
+#mont_video {
+    /* 동영상 가운데로 맞추기 */
+    width: 1060px;
+    height: 500px;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+/* 추가 플레이어 버튼 작업 */
+#mont_btn {
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 91.5%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#mont_btn i {
+    font-size: 96px;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    z-index: 99999;
+}
+
+#mont_btn i:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* Section Why */
+.why {
+    background-color: #fcf9ee;
+    padding-top: 100px;
+    /* 포지션 홀떄문에 높이값 추가 */
+    padding-top: 380px;
+    padding-bottom: 160px;
+}
+.why_content{
+    display: flex;
+    
+}
+.why_content_img_box{
+    display: flex;
+    margin-right: 110px;
+}
+.why_content_img{
+    width: 300px;
+    height: 500px;
+    margin-right: 30px;
+}
+.why_content_img img{
+    width: 100%;
+    height: 100%;
+}
+.why_content h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.why_content_text{
+    padding: 30px 0 50px 0 ;
+}
+.why_content_text p{
+    line-height: 2;
+    font-size: 12px;
+    color: #808080;
+}
+.why_content_text .line{
+    margin: 30px 0;
+}
+.why_content_text div:last-child{
+    margin-top: 42px;
+    cursor: pointer;
+    display: flex;
+}
+.why_content_text div:last-child i{
+    margin-left: 15px;
+    color: rgb(65, 65, 65);
+}
+/* Section FAQ */
+.faq_saying{
+    background-color: #fffefa;
+    padding: 70px 0 130px;
+}
+.faq_container{
+    display: flex;
+}
+.faq{
+    width: 100%;
+}
+.faq h2,.faq_get_saying h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: -2px;
+}
+.faq_get_saying{
+    width: 100%;
+    margin-left: 50px;
+}
+.question{
+    font-size: 18px;
+}
+.answer{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.question_box{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.faq_box {
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0 10px 0;
+    color: #808080;
+
+}
+.question_box i {
+    margin-right: 8px;
+}
+.faq_saying{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile p {
+    margin-left: 20px;
+}
+.faq_img_box{
+    width: 70px;
+    height: 70px;
+
+}
+.faq_img_box img{
+    width: 100%;
+    height: 100%;
+}
+.interview{
+    margin-bottom: 100px;
+}
+.interview .profile+p{
+    margin-top: 15px;
+    line-height: 2;  
+    color: #808080;
+    font-size: 13px;
+}
+/* Aside Banner */
+.banner {
+    background-color: #fc3;
+}
+.banner_img{
+    background-image: url("../images/jomalone_banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.collection{
+    height: 230px;
+    padding-top: 64px;
+    float: left;
+
+}
+.collection h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fcf9ee;
+}
+.collection p{
+    margin-top: 23px;
+    line-height: 1.5;
+    color: #fcf9ee;
+    font-size: 14px;
+}   
+.view-more{
+    float: right;
+    margin-top: 128px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fcf9ee;
+    background-color: #000;
+    cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #fcf9ee;
+    color: #000;
+    padding-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Footer Logo, SNS */
+.footer .footer_logo {
+    width: 510px;
+}
+.footer .footer_logo img{
+    width: 30%;
+}
+.footer_logo dt {
+    margin-bottom: 24px;
+}
+
+.footer_logo dd {
+    font-size: 14px;
+    color: #000;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+.footer_logo .sns {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Footer Services */
+.footer_services {
+    width: 270px;
+}
+.footer_services dt {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.footer_services dd {
+    font-size: 14px;
+    color: #1c1c1c;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer_services dd a:hover {
+    color: #4b4b4b;
+}
+
+/* Footer Assistance */
+.footer_assistance {
+    width: 330px;
+}
+
+.footer_assistance dt {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.footer_assistance dd {
+    font-size: 14px;
+    color: #1c1c1c;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer_assistance dd a:hover {
+    color: #4b4b4b;
+}
+
+/* Footer About */
+.footer_about dt {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.footer_about dd {
+    font-size: 14px;
+    color: #1c1c1c;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer_about dd a:hover {
+    color: #4b4b4b;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 32px;
+}
+
+.copyright .copyright_line {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+/* 플롯 */
+
+.footer_logo,
+.footer_services,
+.footer_assistance,
+.footer_about {
+    float: left;
+}
+
+.copyright {
+    clear: both;
+}

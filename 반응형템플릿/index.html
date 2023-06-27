@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="JiHwan">
+        <meta name="description" content="포트폴리오">
+        <title></title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        -->
+        <link rel="shortcut icon" href="./images/fav/favjh32.png">
+        <!-- <link rel="apple-touch-icon=precomposed" href="./img/bg/eu1.jpg"> -->
+
+        <!-- 기본 코딩 JS 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <!-- 기본 코딩 CSS 파일 -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <!-- 페이지 CSS -->
+        <link rel="stylesheet" href="./css/rwd_template.css">
+        <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css">
+        <script src="./js/jquery.bxslider.js"></script>
+
+        <style>
+            article {
+                max-width: 1920px;
+                margin: 0 auto;
+            }
+            article #gallery_wrap {
+                max-width: 1920px;
+            }
+            article #gallery_wrap li img {
+                width: 100%;
+                height: 500px;
+            }
+            body {
+                background-color: #111111;
+                color: #fff;
+            }
+            .logo img {
+                height: 50px;
+            }
+            .gnb li {
+                margin-top: 15px;
+            }
+            /* article #gallery_wrap .slide_gallery li:nth-child(2),
+            article #gallery_wrap .slide_gallery li:nth-child(3) {
+                display: none;
+            } */
+            .bx-controls {
+                display: none;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- 1. Header -->
+            <header class="header cf container">
+                <!-- Logo -->
+                <h1 class="logo">
+                    <a href="#"><img src="./img/bg/riotLogo.png" alt=""></a>
+                </h1>
+                <!-- /Logo -->
+                <!-- GNB -->
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">챔피언</a>
+                        </li>
+                        <li>
+                            <a href="#">지역</a>
+                        </li>
+                        <li>
+                            <a href="#">코믹</a>
+                        </li>
+                        <li>
+                            <a href="#">또 다른 유니버스</a>
+                        </li>
+                        <li>
+                            <a href="#">지도</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /GNB -->
+                <!-- Hamberger Toggle -->
+                <span class="menu_toggle_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <!-- /Hamberger Toggle -->
+            </header>
+            <!-- /1. Header -->
+
+            <!-- 2. Slider -->
+            <!-- 2.2 슬라이드 제이쿼리 플러그인 작업 -->
+            <!-- <article class="slider"> <h2 class="slider_img"> <img
+            src="./img/bg/eu2.jpg" alt="슬라이드 이미지"> </h2> </article> -->
+            <article>
+                <div id="gallery_wrap">
+                    <ul class="slide_gallery">
+                        <li class="slide fade"><img src="./img/kda-hero.jpg" alt="슬라이드1"></li>
+                        <li class="slide fade"><img src="./img/viego-color-splash.jpg" alt="슬라이드2"></li>
+                        <li class="slide fade"><img src="./img/bg/01_world.jpg" alt="슬라이드3"></li>
+                    </ul>
+                </div>
+            </article>
+            <!-- /2. Slider -->
+
+            <!-- 3.Contents -->
+            <main role="main">
+                <section class="content">
+                    <!-- 3.1 Display -->
+                    <section class="display_section container">
+                        <div class="cf">
+                            <h2 class="sec_title">룬 테라</h2>
+                            <p class="desc">
+                                리그 오브 레전드 유니버스의 세계 배경으로 룬테라(Runeterra)라는 행성이다.
+                                <br>
+                                룬테라라는 이름은 Rune(룬 문자)과 terra(땅)의 합성어로 '마법의 땅', '룬의 땅'이라는 의미다.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- /3.1 Display -->
+
+                    <!-- 3-2. Promotion -->
+                    <section class="promotion_section container">
+                        <h2>
+                            <ul class="promotion_list cf">
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/demacia.png" alt="홈 아이콘">
+                                        <h3>데마시아</h3>
+                                        <p>
+                                            데마시아는 자긍심 넘치는 국민들이 법을 엄격하게 준수하는 왕국으로, 특히 군사력에서 명성을 떨쳐 왔습니다.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/noxus.png" alt="회원정보 아이콘">
+                                        <h3>WE&nbsp;녹서스</h3>
+                                        <p>
+                                            녹서스는 잔혹한 확장주의를 표방하는 제국이지만, 그 호전적인 외면의 안쪽에는 전례가 없을 정도로 개방적인 사회 분위기가 자리하고 있습니다.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/freljord.png" alt="작업물 아이콘">
+                                        <h3>프렐요드</h3>
+                                        <p>
+                                            혹독하고 가차 없는 기후의 땅 프렐요드에서는 주민들은 태어날 때부터 전사이며, 반신의 존재가 대지를 활보합니다.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/shurima.png" alt="글쓰기 아이콘">
+                                        <h3>슈리마</h3>
+                                        <p>
+                                            먼 옛날 슈리마 제국은 남부 대륙을 차지하고 번영의 길을 걷던 문명국이었으나 신성 황제와 더불어 몰락하고, 이제는 폐허만 남았습니다.
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </h2>
+                    </section>
+                    <!-- /3-2. Promotion -->
+
+                    <hr class="divider">
+
+                    <!-- 3-3. Work -->
+                    <section class="work_section">
+                        <div>
+                            <h2 class="sec_title container">유니버스</h2>
+                            <ul class="work_list">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>별 수호자 지난 이야기</h3>
+                                            <span>7개월 전</span>
+                                        </div>
+                                        <img src="img/bg/01_world.jpg" alt="포트폴리오1">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>유니버스 에서 벨베스 알아보기</h3>
+                                            <span>9개월 전</span>
+                                        </div>
+                                        <img src="img/bg/02_world.jpg" alt="포트폴리오2">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>벨베스 단편소설</h3>
+                                            <span>9개월 전</span>
+                                        </div>
+                                        <img src="img/bg/03_world.jpg" alt="포트폴리오3">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>레나타 글라스크 - 유니버스</h3>
+                                            <span>작년</span>
+                                        </div>
+                                        <img src="img/bg/04_world.jpg" alt="포트폴리오4">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>의회기록 보관소 안내</h3>
+                                            <span>작년</span>
+                                        </div>
+                                        <img src="img/bg/05_world.jpg" alt="포트폴리오5">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>빛의 감시자 - 변함없는 마음</h3>
+                                            <span>2년전</span>
+                                        </div>
+                                        <img src="img/bg/06_world.jpg" alt="포트폴리오6">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>가렌 - 첫번째 방패</h3>
+                                            <span>2년전</span>
+                                        </div>
+                                        <img src="img/bg/07_world.jpg" alt="포트폴리오7">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>세라핀 - 단편소설</h3>
+                                            <span>2년전</span>
+                                        </div>
+                                        <img src="img/bg/08_world.jpg" alt="포트폴리오8">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- /3-3. Work -->
+
+                    <hr class="m_divider">
+
+                    <!-- 3-4. Blog -->
+                    <section class="blog_section container">
+                        <div class="cf">
+                            <h2 class="sec_title">개발자 블로그</h2>
+                            <ul class="blog_list cf">
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/09_world.jpg" alt="블로그 이미지 01">
+                                    </a>
+                                    <time datetime="1982-03-01">2023년 게임 모드 현황</time>
+                                    <a href="#">
+                                        <h3>
+                                            무작위 총력전과 신규 2대2대2대2 모드를 이야기했으니, 이제 미래에 대해 이야기를 나눌 시간이 되었습니다. 과거의 게임 모드를 살펴보면서 말이죠.
+                                        </h3>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/10_world.jpg" alt="블로그 이미지 02">
+                                    </a>
+                                    <time datetime="1982-03-20">[개발 인사이드] 유미 업데이트</time>
+                                    <a href="#">
+                                        <h3>
+                                            한 주제를 자세히 파고들기 전에, 프리시즌부터 시작해 최근 몇 번의 패치를 통해 많은 변화가 있었다는 점을 언급하고 싶습니다. 
+                                        </h3>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/bg/11_world.jpg" alt="블로그 이미지 03">
+                                    </a>
+                                    <time datetime="1982-03-15">게임 플레이에 대한 단상: 13.3</time>
+                                    <a href="#">
+                                        <h3>
+                                            리그 오브 레전드에서 유일무이한 게임플레이 특징을 지닌 유미는 아군에게 밀착해 대상으로 지정할 수 없는 상태를 무기한 유지할 수 있습니다.
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- /3-4. Blog -->
+
+                    <!-- 3-5 Contact -->
+                    <section class="contact_section container">
+                        <div class="cf">
+                            <h2 class="sec_title">CONTACT</h2>
+                            <form action="#" class="form_box">
+                                <fieldset class="cf">
+                                    <legend class="blind">CONTACT&nbsp;US</legend>
+                                    <!-- Input Form -->
+                                    <div class="form">
+                                        <label for="name" class="blind">Name</label>
+                                        <input type="text" id="name" placeholder="Name">
+                                        <label for="phone" class="blind">Phone</label>
+                                        <input type="tel" id="phone" placeholder="Phone">
+                                        <label for="email" class="blind">E-Mail</label>
+                                        <input type="email" id="email" placeholder="Email Address">
+                                    </div>
+                                    <!-- /Input Form -->
+                                    <!-- Textarea Form -->
+                                    <div class="txta">
+                                        <label for="message" class="blind">Message</label>
+                                        <textarea id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <!-- /Textarea Form -->
+                                </fieldset>
+                                <!-- Button -->
+                                <div class="send_btn">
+                                    <button>SEND MESSAGE</button>
+                                </div>
+                                <!-- /Button -->
+                            </form>
+                        </div>
+                    </section>
+                    <!-- /3-5 Contact -->
+
+                </section>
+            </main >
+            <!-- /3.Contents -->
+
+            <!-- 4.Footer -->
+            <footer class="footer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3164.9166226034667!2d127.0620353!3d37.5098846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e855555555%3A0x9adc6f7812a5019c!2z65287J207JeH6rKM7J6E7KaI7L2U66as7JWE!5e0!3m2!1sko!2skr!4v1677037403080!5m2!1sko!2skr"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>
+                    COPYRIGHT ALL RIGHTS RESERVED., WEBADD
+                </p>
+            </footer>
+            <!-- /4.Footer -->
+        </div>
+
+    </body>
+    <script>
+        var dot = $(".dot");
+        $(function () {
+            $(".slide_gallery").bxSlider({
+                auto: true,
+                mode: "fade",
+                pager: true,
+                pause: 2000,
+                autoHover: false,
+                slideWidth: 1920
+            })
+        });
+        $(".menu_toggle_btn").click(function () {
+            $(".gnb").toggle();
+        });
+    </script>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JiHwan">
+    <meta name="description" content="포트폴리오">
+    <title>Portfolio, Float 구조 몽블랑</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/rest.css">
+    <link rel="stylesheet" href="./css/notosan_kr_CDN.css">
+    <link rel="stylesheet" href="./css/moblanc_mov.css">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header>
+            <div class="w1280 cf">
+                <!-- Logo, GNB -->
+                <div class="logo_gnb_left">
+                    <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="몽블랑로고"></a></h1>
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="#">홈</a></li>
+                            <li><a href="#">쇼핑하기</a></li>
+                            <li><a href="#">선물하기</a></li>
+                            <li><a href="#">조말론&nbsp;런던</a></li>
+                            <li><a href="#">하일랜드&nbsp;컬렉션</a></li>
+                            <li><a href="#">블로썸&nbsp;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /Logo, GNB -->
+                <!-- Search Btn -->
+                <div class="search">
+                    <a href="#"><img src="./images/btn_search.png" alt="검색아이콘"></a>
+                </div>
+                <!-- /Search Btn -->
+            </div>
+            <!-- ImageText Deco -->
+            <div class="w1280 img_deco">
+                <h3>신제품 </h3>
+                <h2>Rose Water & Vanilla Cologne</h2>
+                <p>
+                    셀러브레이팅 더 로즈, 장미 향에 찬사를 바치는 컬렉션<br>
+                    기분이 좋아지는 장미의 향을 함께 나누고 만끽해 보세요. 
+                </p>
+                <p>
+                    <button><a href="#">구매하기</a></button>
+                </p>
+            </div>
+            <!-- /ImageText Deco -->
+        </header>
+        <!-- /Header -->
+
+        <!-- Section CardBox -->
+        <section class="card_box">
+            <div class="w1280 cf">
+                <!-- 3단 CardBox -->
+                <div class="card_view">
+                    <h2><a href="#"><img src="./images/card-img1.png" alt="카드이미지1"></a></h2>
+                    <div class="selo">
+                        <p>
+                            가을의 정수. 화이트 프리지아 부케향에 이제 막 익은 배의 신선함을 입히고 호박, 파출리, 우디향으로 은은함을 더했습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="card_view">
+                    <h2><a href="#"><img src="./images/card-img2.png" alt="카드이미지2"></a></h2>
+                    <div class="selo">
+                        <p>
+                            자연 본연의 느낌을 풍성하게 담은 각각의 프레그런스가 살아있는 자연을 간직한 하일랜드만의 독특한 풍경 속에 서 있는 듯한 느낌을 선사합니다
+                        </p>
+                    </div>
+                </div>
+                <div class="card_view no_mr">
+                    <h2><a href="#"><img src="./images/card-img3.jpg" alt="카드이미지3"></a></h2>
+                    <div class="selo">
+                        <p>
+                            월계수 잎의 신선함에 톡 쏘는 블랙베리 과즙을 가미하였습니다. 매력적이고 생기 넘치는 상쾌한 느낌의 향입니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- /3단 CardBox -->
+                <!-- CardBox Text -->
+                <div class="card_box_info cf">
+                    <h2>Please call out concierge on <span>211-81-71889</span></h2>
+                    <p>
+                        더 알아보기 <img src="./images/arrow_silver.png" alt="링크화살표">
+                    </p>
+                </div>
+                <!-- /CardBox Text -->
+            </div>
+        </section>
+        <!-- /Section CardBox -->
+
+        <!-- Section ABOUTUS -->
+        <section class="about_us">
+            <div class="w1280">
+                <h2 class="about_us_text">
+                    새로운 계절의 공기가 도시를 향기롭게 감싸 안아줍니다. <br>
+                    붐비는 거리와 평온한 정원 사이에 반짝이는 블로썸이 굽어진 나뭇가지와 무성한 녹음 사이로 모습을 활짝 드러냅니다. <br>
+                    새로운 리미티드 에디션 컬렉션을 만나보세요. <br>
+                </h2>
+                <div class="line"></div>
+                    <div class="about_us_tab">
+                        <div class="about_us_contents">
+                            <h2>우리의 사람 & 우리의 일터</h2>
+                            <nav>
+                                <ul class="about_us_li cf">
+                                    <li >
+                                        <span class="on"> 건강의 모든 것</span>
+                                        <div class="text_box">
+                                            <div class="about_text">
+                                                조 말론 런던 안에서 우리는 모두 서로에 대한 친절을 가장 중요하게 여기는 하나의 가족이라고 생각합니다. 
+                                                포용성과 다양성을 기반으로, 서로 협업하고 따뜻하게 맞이하는 환경에서
+                                                창의성과 개방성을 높일 수 있는 일터를 만들기 위해 최선을 다하고 있습니다.
+                                            </div>
+                                            <div class="about_text">
+                                                조 말론 런던은 직원 가족에 대한 지원과 유연한 근무제도,
+                                                여성 리더십에 대한 적극적인 지지 그리고
+                                                정신 건강에 관한 사내 이니셔티브로 뒷받침되는
+                                                다양한 직원 보호 제도를 토대로 인재를 양성하고 팀의 복지를 돕는 것을 자랑스럽게 여기고 있습니다. 
+                                                이로써 모든 사람이 자신의 개성을 있는 그대로 존중받을 수 있는 커뮤니티를 만들어가고자 합니다.
+                                            </div> 
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <span>자선활동 미션</span>
+                                        <div class="text_box">
+                                            <div class="about_text">
+                                                우리는 정신건강 관련 활동을 지원하고, 개인적인 고통을 안고 살아가는 이들에게 자연이 줄 수 있는 긍정적인 효과를 널리 알릴 수 있도록 최선을 다하고 있습니다. 
+                                                관련된 인식을 제고하고, 다양한 지원을 제공하며, 부정적인 인식을 타파할 수 있도록 천천히 한 걸음씩 나아가고 있습니다.
+                                            </div>
+                                            <div class="about_text">
+                                                우리는 오랫동안 자연으로부터 영감을 얻어왔습니다. 
+                                                다양한 꽃과 식물의 존재 자체는 생명이 예상치 못한 상황에서도 아름다울 수 있다는 사실을 일깨워줍니다.
+                                                하지만 예상치 못한 어려움 또한 닥칠 수 있죠. 모든 상처가 눈에 다 보이는 것은 아닙니다. 
+                                                네 명 중 한 명꼴로 살아가면서 정신 건강 상의 문제로 영향을 받을 수 있다고 합니다. 
+                                                그럼에도 불구하고 이러한 질병에 대한 충분한 재정 지원이나 사회적 인식은 아직은 부족한 실정입니다. 
+                                                조 말론 런던은 이러한 금기를 깨는데 일조하고자 합니다.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>우리의 활동</span>
+                                        <div class="text_box">  
+                                            <div class="about_text">
+                                                우리는 환경 보호의 의무뿐만 아니라, 제품을 생산할 때에도 신중한 접근 방식을 취해야 할 책임이 있음을 잘 알고 있습니다. 
+                                                이러한 노력은 현재 진행형이지만, 환경에 대한 영향을 줄이는 책임감 있는 행위들이 조 말론 런던이 관여하는 모든 활동의 중심이 될 수 있도록 최선을 다하고 있습니다.
+                                            </div>
+                                            <div class="about_text">
+                                                조 말론이 하는 모든 활동의 근간에는 친절함이 있습니다. 
+                                                재활용되었거나 재활용될 수 있는 포장재를 사용하는 것부터, 재생 가능한 에너지를 적극 사용하는 시설에서 우리의 제품을 생산하겠다는 약속, 
+                                                탄소 배출을 줄이기 위한 노력들, 책임을 다해 조달한 원료와 관련된 투명성을 제고하는 것과, 지역사회와 환경을 존중하는 마음 말이죠.
+                                                우리는 지속가능성에 대한 기준이 계속해서 발전해나갈 수 있도록 끊임없이 검토하고 있습니다
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="circle"></div>
+                            <p>
+                                더 알아보기
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="about_img_container">
+                            <div class="about_img_box">
+                                <div class="about_us_img">
+                                    <img src="./images/jomalone.store.jpg" alt="">
+                                </div>
+                                <div class="about_us_img">
+                                    <img src="./images/jomalone.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="about_img_box">
+                                <div class="about_us_img">
+                                    <img src="./images/jomalone_us1.jpg" alt="">
+                                </div>
+                                <div class="about_us_img">
+                                    <img src="./images/jomaloneUs2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="about_img_box">
+                                <div class="about_us_img">
+                                    <img src="./images/jomalone_act1.jpg" alt="">
+                                </div>
+                                <div class="about_us_img">
+                                    <img src="./images/jomalone_act2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- /Section ABOUTUS -->
+        <!-- Article MOV -->
+        <article class="move-container">
+            <div class="move-info ">
+                <h4>코롱</h4>
+                <p>조 말론 런던의 심플하면서도 우아한 코롱은 엄선된 원료를 바탕으로 서로 다른 코롱과 함께 페어링 할 수 있도록 디자인되었습니다. <br>
+                나만을 위한, 가장 잘 어울리는 향을 완성해 보세요.</p>
+            </div>
+            <div class="mov">
+            </div>
+            <figure>
+            <video muted id="mont_video"  >
+                <source src="./images/[우먼센스 뷰티] 영국 향수 브랜드 조말론 크리스마스 광고 영상.mp4">
+            </video>
+            </figure>
+            <button id="mont_btn">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i> 
+                <!-- <i class="fa fa-pause-circle-o" aria-hidden="true"></i>  -->
+            </button>
+            </div>
+        </article>
+        <!-- /Article MOV -->
+        <!-- Section Why -->
+        <section class="why">
+            <div class="why_content w1280">
+                <div class="why_content_img_box">
+                    <div class="why_content_img">
+                        <img src="./images/whyChoose1.png" alt="">
+                    </div>
+                    <div class="why_content_img">
+                        <img src="./images/whyChoose2.png" alt="">
+                    </div>
+                </div>
+                <div class="why_content_text">
+                    <h2>환경과 사회에 대한 우리의 약속</h2>
+                    <p>
+                        자연은 영원한 조 말론 런던의 뮤즈로서, 환경 보호에 있어서도 적극적인 역할을 하고자 합니다. <br>
+                        조 말론 런던은 우리가 활동하는 방식이 사회와 환경에 영향을 줄 수 있다는 점을 인지하며,<br>
+                        우리의 제조 시설인 Whitman Laboratories에서도 태양 에너지를 사용하며 이산화탄소 배출을 줄이도록 하고 있습니다.
+                        우리가 주변에 미치는 영향을 보다 잘 관리하고, 모범을 보이고자 하는 것입니다.
+                    </p>
+                    <div class="line"></div>
+                    <p>
+                        조 말론 런던은 모기업의 지원으로 Renewable Energy 100에 서명함으로써, <br>
+                        2020년 말까지 우리가 사용하는 전기의 100%를 재생 가능한 전력으로 사용하기로 약속했습니다. <br>
+                        2019년에는 전 세계 위치한 조 말론의 전체 제조 시설에서 나온 모든 산업폐기물은 매립지 이외의 방식으로 처리되었으며, 
+                        전 세계 유통시설 중 85%가 생산된 폐기물 전체를 매립지 외의 방식으로 처리하였습니다.
+                        우리는 지속적으로 발전하고 개선할 수 있도록, 배운 것들을 이행하고 새로운 프로세스나 관행을 공유할 수 있는 다양한 단체와 기관에 가입되어 있습니다.
+                    </p>
+                    <div>
+                        모든 서비스 보기
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section Why -->
+        <!-- Section FAQ -->
+        <section class="faq_saying">
+            <div class="w1280 faq_container">
+                <div class="faq">
+                    <h2>FAQ</h2>
+                    <div class="faq_box">
+                        <div class="question_box">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div class="question">나의 주문 내역은 어디서 확인하나요?</div>
+                        </div>
+                        <p class="answer">온라인으로 고객님의 주문 상태를 확인하실 수 있습니다. 또는 조 말론 런던 고객관리지원팀 02-6971-3228 로 전화 문의, consumercare-kr@jomalone.com. 으로 이메일 문의도 가능합니다. 문의 시 고객님의 주문 확인 번호를 함께 알려주세요.</p>
+                    </div>
+                    <div class="faq_box">
+                        <div class="question_box">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div class="question">해외 주문도 가능한가요?</div>
+                        </div>
+                        <p class="answer">조 말론 런던 온라인 부티크에서 주문하신 제품은 한국 내로만 배송이 가능하며, 해외 배송이 불가능합니다. 또는 조 말론 런던 고객관리지원팀 (02-6971-3228) 로 전화 문의, consumercare-kr@jomalone.com. 으로 이메일 문의도 가능합니다. 문의 시 고객님의 주문 확인 번호를 함께 알려주세요.</p>
+                    </div>
+                    <div class="faq_box">
+                        <div class="question_box">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div class="question">결제 시 신용카드를 사용해도 안전한가요?</div>
+                        </div>
+                        <p class="answer">주문 과정에서 수집되는 모든 정보는 온라인 보안 관련 최신 암호화 기술인 Secure Socket Layer (SSL)을 이용하여 암호화 됩니다. 사이트 내에서는 안심하고 결제하셔도 좋습니다.</p>
+                    </div>
+                    <div class="faq_box">
+                        <div class="question_box">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div class="question">조 말론 런던 샘플 제품은 어떻게 받을 수 있나요?</div>
+                        </div>
+                        <p class="answer">샘플 재고가 있는 경우, 고객관리지원팀에 요청하실 필요 없이 제품 주문 시 제공받으실 수 있습니다.</p>
+                    </div>
+                    <div class="faq_box">
+                        <div class="question_box">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <div class="question">조 말론 런던 제품은 어디서 구매할 수 있나요?</div>
+                        </div>
+                        <p class="answer">조 말론 런던 제품은 한국 내, 전 세계 지정된 상점에서 구매하실 수 있습니다. 한국 내 가까운 조 말론 런던 부티크를 알아보시려면 부티크 찾기를 이용해보세요</p>
+                    </div>
+
+                </div>
+                <div class="faq_get_saying">
+                    <h2>ABOUT&nbsp;&nbsp;&nbsp;JO&nbsp; MALONE&nbsp; LONDON</h2>
+                    <div class="interview">
+                        <div class="profile">
+                            <div class="faq_img_box">
+                                <img src="./images/kim.png" alt="배우 이미지">
+                            </div>
+                            <p>
+                                김우빈 / 대한민국 서울
+                            </p>
+                        </div>
+                        <p>감사의 마음을 표현하는 날이 많은 5월이죠.
+                            김우빈이 추천하는 조말론 런던의 홈 프레그런스 & 배스
+                            앤 바디로 특별한 일상을 선물해보세요.</p>
+                    </div>
+                    <div class="interview no_mb">
+                        <div class="profile">
+                            <div class="faq_img_box">
+                                <img src="./images/kim2.png" alt="배우 이미지">
+                            </div>
+                            <p>
+                                김소은 / 대한민국 서울
+                            </p>
+                        </div>
+                        <p>
+                            '미모사 앤 카다멈'은 보헤미안 감성을 현대적으로 해석한 향수로 
+                            골드 빛 미모사의 달콤한 향이 이제 막 으깬 카다멈의 스파이시함 위로 안개처럼 피어 오르는 
+                            플로랄 계열의 향수를 경험하세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section FAQ -->
+        <!-- Aside Banner -->
+        <aside class="banner_img">
+            <div class="w1280 cf">
+                <div class="collection">
+                    <h2>JOMALONE COLLECTION</h2>
+                    <p>
+                        장엄한 광야. 안개가 자욱한 들판과 헤더 꽃으로 뒤덮인 언덕. 자연이 다시 차지한 고대 성곽. <br>
+                        스코틀랜드 하일랜드의 길들여지지 않은 아름다움에서 영감을 받은 리미티드 컬렉션입니다.
+                    </p>
+                </div>
+                <div class="view-more">
+                    컬렉션 더보기
+                </div>
+            </div>
+        </aside>
+        <!-- /Aside Banner -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="w1280">
+                <!-- Footer Logo, SNS -->
+                <dl class="footer_logo">
+                    <dt><img src="./images/footer-logo.png" alt="몽블랑 로고"></dt>
+                    <dd>
+                        이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine),<br>
+                        서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232<br>
+                    </dd>
+                    <dd class="sns"><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></dd>
+                    <dd class="sns"><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></dd>
+                    <dd class="sns"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></dd>
+                </dl>
+                <!-- Footer Logo, SNS -->
+                <!-- Footer Services -->
+                <dl class="footer_services">
+                    <dt>교환&nbsp;&amp;&nbsp;환불</dt>
+                    <dd><a href="#">교환&nbsp;및&nbsp;환불</a></dd>
+                    <dd><a href="#">손상&nbsp;/하자&nbsp;및&nbsp;잘못된&nbsp;제품</a></dd>
+                    <dd><a href="#">환불&nbsp;절차</a></dd>
+                </dl>
+                <!-- /Footer Services -->
+
+                <!-- Footer Assistance -->
+                <dl class="footer_assistance">
+                    <dt>온라인&nbsp;쇼핑하기</dt>
+                    <dd><a href="#">온라인&nbsp;쇼핑방법</a></dd>
+                    <dd><a href="#">온라인&nbsp;보안</a></dd>
+                    <dd><a href="#">제품&nbsp;구매&nbsp;가능&nbsp;여부</a></dd>
+                    <dd><a href="#">가능&nbsp;결제수단</a></dd>
+                    <dd><a href="#">무료&nbsp;선물&nbsp;포장&nbsp;서비스</a></dd>
+                </dl>
+                <!-- /Footer Assistance -->
+
+                <!-- Footer About -->
+                <dl class="footer_about">
+                    <dt>이용약관</dt>
+                    <dd><a href="#">개인정보보호</a></dd>
+                    <dd><a href="#">개인&nbsp;용도의&nbsp;제품&nbsp;및&nbsp;서비스</a></dd>
+                    <dd><a href="#">구매&nbsp;관련&nbsp;정책&nbsp;및&nbsp;절차</a></dd>
+                </dl>
+                <!-- /Footer About -->
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <div class="copyright_line"></div>
+                    <p>
+                        Copyright All Rights &copy; Reserved Jomalone
+                    </p>
+                </div>
+                <!-- /Copyright -->
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+</body>
+<script src="./js/monblanc_mov.js"></script>
+</html>

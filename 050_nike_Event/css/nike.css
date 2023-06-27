@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/* Background Video */
+.vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -99;
+}
+
+.vid video {
+    width: 100%;
+}
+
+/* 우측상단 SNS */
+#sns {
+    position: fixed;
+    right: 40px;
+    top: 50px;
+}
+
+#sns li {
+    display: inline-block;
+}
+
+#sns li i {
+    font-size: 30px;
+    color: #b9fb05;
+    padding-left: 20px;
+    opacity: 0.8;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+/* SNS Hover 효과 */
+#sns li:hover i {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Header 왼쪽메뉴 */
+header {
+    width: 700px;
+    height: 100%;
+    /* 포지션 */
+    position: fixed;
+    left: -420px;
+    top: 0;
+    z-index: 1;
+    /* 그라디언트 */
+    background: linear-gradient(#e9fc55, #b9fb05, #97e031);
+    /* 회전? */
+    transform: skewX(-40deg);
+}
+
+header h1 {
+    /* 포지션 */
+    position: absolute;
+    right: 200px;
+    top: 40px;
+    z-index: 1;
+    /* 로고 바로 세우기 */
+    transform: skewX(40deg);
+}
+
+#gnb {
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+
+/* Menu 1 Depth */
+#gnb li a {
+    display: block;
+    width: 200px;
+    color: #222;
+    font: bold 18px/3 "play", sans-serif;
+    text-align: center;
+    padding-left: 40px;
+}
+
+#gnb li:hover a {
+    background-color: #222;
+    color: #fff;
+}
+
+#gnb li em {
+    display: inline-block;
+    transform: skewX(40deg);
+}
+
+#gnb li {
+    /* 2depth 위치기준값 */
+    position: relative;
+}
+
+
+
+#gnb .snb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    /* 2depth 안보이다가 보이도록 */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#gnb .snb a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font: 16px/2.5 Arial, sans-serif;
+    border-bottom: 1px solid #b9fb05;
+    /* 들여쓰기 */
+    text-indent: 2em;
+    margin-bottom: 3px;
+}
+
+
+#gnb .snb li:hover a {
+    background-color: #b9fb05;
+    color: #222;
+
+}
+
+/* 1depth 를 호버하면 2depth가 나오는 효과 */
+#gnb li:hover .snb {
+    opacity: 0.8;
+    /* 포지션으로 snb 위치값을 잡아줬기 때문에 left로 주면 가독성이 좋다 
+    물론 transform도 호환이 되긴함.
+    */
+    /* transform: translateX(140%); */
+    left: 180px;
+}
+
+/* Image Text */
+.txt {
+    position: fixed;
+    right: 40px;
+    top: 200px;
+    z-index: 1;
+}
+
+.txt .p1 {
+    font-size: 10rem;
+    color: #b9fb05;
+    font-family: "Monoton", sans-serif;
+    letter-spacing: -1px;
+}
+
+.txt .p1>em {
+    font-size: 50px;
+    font-family: "play", sans-serif;
+    color: #fff;
+    font-style: italic;
+}
+
+.txt .p2 {
+    font-size: 34px;
+    font-family: "play", sans-serif;
+    color: #bbb;
+    letter-spacing: -2px;
+}
+
+.txt .p2>em {
+    font: bold 34px Arial, sans-serif;
+    color: #b9fb05;
+    margin-left: 20px;
+}
+
+/* 우측하단 호버버튼 */
+#side {
+    width: 800px;
+    height: 100%;
+    background: #111;
+    position: fixed;
+    right: -800px;
+    top: 0;
+    z-index: 1;
+    transform: skewX(-40deg);
+    opacity: 0.5;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* 호버시 효과 */
+#side:hover {
+    right: -500px;
+    opacity: 0.8;
+}
+
+#side .inner {
+    width: 400px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    z-index: 1;
+    transition: all 1s;
+}
+
+/* 호버시 효과 */
+#side:hover .inner {
+    left: 50px;
+}
+
+/* Image Button */
+#side .inner p {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    transform: translateX(200px);
+}
+
+#side .inner p img {
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+#side .inner p img:hover {
+    opacity: 1;
+}
+
+/* Image Button 각각 위치 설정 */
+#side .inner p:nth-child(1) {
+    bottom: 270px;
+    transition: all 0.4s;
+}
+
+#side .inner p:nth-child(2) {
+    bottom: 160px;
+    transition: all 0.8s;
+}
+
+#side .inner p:nth-child(3) {
+    bottom: 50px;
+    transition: all 1.2s;
+
+}
+
+#side .inner p>em {
+    display: inline-block;
+    font: bold 16px/1.6 Arial, sans-serif;
+    color: #a0bd50;
+    transform: skewX(40deg);
+}
+
+#side:hover .inner p {
+    transform: translateX(0px);
+}
+
+/* Animation Arrow */
+/* UX, 뭐가 있으니까 한번 눌러봐. */
+#side .arrBtn {
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+    z-index: 999;
+    transform: skewX(40deg);
+}
+
+#side .arrBtn i {
+    font-size: 60px;
+    color: #a0bd50;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+/* 애니메이션 효과 */
+#side .arrBtn i:nth-child(1) {
+    animation: arrowAni linear 1.5s 0s infinite;
+}
+
+#side .arrBtn i:nth-child(2) {
+    animation: arrowAni linear 1.5s 0.5s infinite;
+}
+
+#side .arrBtn i:nth-child(3) {
+    animation: arrowAni linear 1.5s 1s infinite;
+}
+
+
+/* 애니메이션 키프레임 */
+@keyframes arrowAni {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        right: 0;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.2);
+        right: 100px;
+    }
+}

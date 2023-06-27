@@ -1,0 +1,287 @@
+body {}
+
+.w1440 {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 46px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+header {
+    background-image: url("../images/slide_back_img.png");
+    background-position: center;
+    width: 100%;
+    height: 700px;
+}
+
+header .nav {
+    padding: 20px;
+
+}
+
+header p {
+    float: left;
+}
+
+header ul li {
+    float: left;
+    margin: 15px;
+    color: #c5b5b5;
+}
+
+header ul li:hover {
+    color: white;
+    font-weight: bold;
+}
+
+header ul {
+    float: right;
+}
+
+header .cover {
+    width: 95%;
+    float: left;
+    margin-bottom: 200px;
+}
+
+header .cover+p {
+    width: 5%;
+    float: right;
+}
+
+header article {
+    width: 100%;
+    padding-left: 50px;
+    height: 700px;
+}
+
+.notosanskr {
+    color: white;
+}
+
+.nav+article p {
+    line-height: 2;
+    color: gray;
+}
+
+.showNow {
+    width: 150px;
+    height: 50px;
+    color: black;
+    border: none;
+    background-color: #ffcc33;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.cardContainer {
+    background-color: #b4b4b4;
+    height: 560px;
+    z-index: -1;
+
+}
+
+.cardBox {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.card1 {
+    position: absolute;
+    top: -80px;
+    left: 1;
+    z-index: 1;
+}
+
+.card2 {
+    position: absolute;
+    top: -80px;
+    left: 525px;
+    z-index: 1;
+}
+
+.card3 {
+    position: absolute;
+    top: -80px;
+    right: 1px;
+    z-index: 1;
+}
+
+b {
+    color: #3d3d3d;
+}
+
+.cardParents p {
+    color: #6d6d6d;
+    float: left;
+}
+
+.cardParents p+p {
+    float: right;
+    font-weight: bold;
+}
+
+.aboutCotainer {
+    padding-top: 100px;
+    text-align: center;
+    color: #6c6c6c;
+    line-height: 2.5;
+}
+
+.about {
+    width: 100%;
+    height: 870px;
+    background-image: url('../images/aboutus.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.star {
+    height: 560px;
+    width: 100%;
+    z-index: -1;
+    background-position: center;
+    background-image: url('../images/mov_back.jpg');
+}
+
+.movie {
+    height: 1000px;
+    color: white;
+}
+
+.movie article {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+.movieBox {
+    position: relative;
+    height: 400px;
+
+}
+
+.movieBox img {
+    position: absolute;
+    left: 190px;
+    top: -260px;
+    z-index: 1;
+}
+
+.faq {
+    height: 680px;
+    background-color: #dddddd;
+}
+
+.faq section {
+    padding-top: 70px;
+}
+
+.banner {
+    height: 250px;
+    background-color: #ffcd36;
+}
+
+footer {
+    height: 550px;
+    padding: 75px 0 75px 0;
+    background-color: #000;
+    color: #696969;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footerCover1 div+div p {
+    font-weight: bold;
+    line-height: 1;
+}
+
+.footerCover1 div:nth-child(1) {
+    float: left;
+    width: 50%;
+}
+
+.footerCover1 div p {
+    margin-top: 15px;
+}
+
+.footerCover1 {
+    float: left;
+    width: 50%;
+}
+
+.footerCover2 {
+    float: right;
+}
+
+.footerCover1 div:nth-child(2) {
+    width: 30%;
+    float: right;
+    margin-left: 100px;
+}
+
+.footerCover1 ul {
+    margin-top: 25px;
+}
+
+.footerCover1 ul li {
+    float: left;
+    margin: 15px;
+}
+
+.footerCover1 ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+.footerCover2 {
+    float: right;
+    width: 50%;
+}
+
+.footerCover2 div:nth-child(1) {
+    float: left;
+    margin-left: 150px;
+    width: 30%;
+}
+
+.footerCover2 div:nth-child(2) {
+    float: right;
+    width: 35%;
+}
+
+.footerMenu span {
+    color: #ffcc33;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 60px;
+    background-color: white;
+    color: white;
+}
+
+footer hr+p {
+    text-align: center;
+    margin: 40px;
+}

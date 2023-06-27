@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+body {
+    /* font-family: "Noto Sans", sans-serif; */
+}
+
+#wrap {
+    width: 100%;
+    overflow: hidden;
+    
+}
+.bg-video{
+    position: absolute;
+    bottom: -82%;
+    left: 0;
+    height: 66%;
+    width: 100%;
+    z-index: -1;
+    opacity: 7;
+}
+
+.bg-video__content{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+.header {
+    padding: 24px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header > div:first-child{
+    /* 포지션 위치기준값 */
+    position: relative;    
+}
+/* 로고 */
+.logo{
+    width: 87px;
+    height: 16px;
+    position:absolute;
+    left: 38%;
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+===============================================================================
+    모바일 햄버거 메뉴 효과
+===============================================================================
+*/
+/* A. 햄버거 메뉴 그리기 */
+/* 속성 선택자로 체크박스 스타일링 */
+input[id="menuicon"] {
+    display: none;
+}
+
+input[id="menuicon"]+label  {
+    display: block;
+    width: 24px;
+    height: 14px;
+    cursor: pointer;
+    /* 포지션 위치기준값 */
+    position: fixed;
+    left: 5%;
+    top: 3%;
+    z-index: 9999;
+}
+/* 파비콘을 사용하지 않고 햄버거 메뉴 만들기 */
+input[id="menuicon"]+label span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    /* 포지션 */
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/* B. 햄버거클릭시 X 버튼 만들기 */
+/* input을 클릭하면 첫번째 햄버거의 위치를 50% 이동시키고 45도 회전 */
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
+/* C. GNB 메뉴 슬라이딩 효과 */
+.header nav[class="mobile_gnb"] {
+    width: 250px;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    /* 포지션 */
+    position: fixed;
+    left: -250px;
+    top: 0;
+    z-index: 90;
+    transition: all 0.3s;
+}
+
+input[id="menuicon"]:checked+label+.mobile_gnb {
+    /* transform: translateX(250px); */
+    left: 0;
+}
+
+
+/* 햄버거 클릭시 보이는 GNB 메뉴 */
+
+.header .mobile_gnb {
+    padding: 64px 0 0 0;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8rem;
+}
+
+.header .mobile_gnb .gnb>li {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 24px;
+}
+
+.header .mobile_gnb .gnb>li:hover {
+    background-color: #fff;
+}
+
+.header .mobile_gnb .gnb>li>a {
+    display: block;
+    color: #fff;
+}
+
+.header .mobile_gnb .gnb>li>a:hover {
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* 추가 코딩 */
+.header nav[class="mobile_gnb"] li:last-child:hover {
+    background: none;
+    cursor: default;
+}
+
+.header nav[class="mobile_gnb"] li:last-child a:hover {
+    background: none;
+    color: #fff;
+    font-weight: 400;
+    cursor: default;
+}
+main{
+    padding: 0 10px;
+    overflow: hidden;
+}
+/* Contents */
+#contents {
+    width: 100%;
+}
+/* 메인 슬라이더 영역 */
+.slide{
+    position: relative;
+    height: 700px;
+}
+/* 텍스트 공통 */
+.text-box{
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+    left: 5%;
+    top: 50%;
+    line-height: 1.2;
+}
+.text-box .slider-text span{
+    font-weight: bold;
+}
+.text-box .kv__product{
+    font-size: 16px;
+    position: absolute;
+    bottom: -15%;
+    left: 1%;
+}
+/* 2,4번째 슬라이드 공통 */
+.mb{
+    bottom: -30% !important;
+}
+/* 이벤트 영역 */
+.event{
+    text-align: center;
+    padding: 64px 0;
+}
+.event-box{
+    margin: 0 auto;
+}
+.event>h2{
+    margin-bottom: 25px;
+
+}
+.event h2{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: "Noto Sans KR",serif;
+    color: #222;
+    line-height:1.5;
+}
+
+.event-contents{
+    margin: 0 auto;
+    padding: 44px 16px;
+    width: 366px;
+    height: 510px;
+    background-image: url("../images/eventImg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.event-contents h2{
+    font-weight: 600;
+    font-size: 27px;
+}
+.event-contents span{
+    font-size: 13px;
+    color: #666;
+
+}
+/* 이벤트 스와이퍼 */
+.event-sub-swiper{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.event-sub-swiper .swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper {
+    width: 300px;
+    height: 300px;
+}
+.event-sub-swiper .swiper{
+    position: relative;
+    margin: 0 auto;
+}
+.event-sub-swiper .swiper .swiper-wrapper .swiper-slide  div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+
+}
+.event-sub-swiper .swiper .swiper-wrapper .swiper-slide h2{
+}
+.event-swiper-img-box1{
+    background-image:url("../images/event-slider1.jpg") ;
+}
+.event-swiper-img-box2{
+    background-image:url("../images/event-slider2.jpg") ;
+}
+.event-swiper-img-box3{
+    background-image:url("../images/event-slider3.jpg") ;
+}
+.event-sub-swiper .swiper h2{
+    font-size: 25px;
+    position: absolute;
+    left: 6%;
+    bottom: 17%;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.25;
+
+}
+.event-sub-swiper .swiper  p{
+    font-size: 12px;
+    position: absolute;
+    text-align: left;
+    left: 6%;
+    bottom: 7%;
+    color: #666;
+    line-height: 1.5;
+}
+.event-swiper-img-box3 p{
+    bottom: 3% !important;
+}
+.swiper-scrollbar{
+    height: 3px;
+    position: absolute;
+    left: 8%;
+    width: 80%;
+    bottom: -10%;
+    z-index: 10;
+}
+.swiper-pagination{
+    color: #fff;
+}
+.swiper-pagination-total{
+    color: #fff;
+
+}
+.event a:last-child{
+    font-size: 13px;
+}
+.event a i{
+    font-weight: 100;
+}
+/* Product */
+.product{
+    padding: 64px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.product h2{
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 33px;
+}
+.swiper-product{
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+}
+.product .swiper-product .swiper-wrapper .swiper-slide div {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    padding: 0 35px;
+
+}
+.product .swiper-product .swiper-wrapper div:nth-child(4) div {
+    border: none;
+
+}
+.product p{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 260px;
+}
+.product-swiper-img-box1{
+    background-image: url("../images/product-camera.png");
+}
+.product-swiper-img-box2{
+    background-image: url("../images/product-vdeioCamera.png");
+}
+.product-swiper-img-box3{
+    background-image: url("../images/product-audio.png");
+}
+.product-swiper-img-box4{
+    background-image: url("../images/product-ps.png");
+}
+.product .swiper-scrollbar{
+    bottom: 10%;
+    opacity: 0;
+}
+
+/* banner */
+.banner{
+    padding: 64px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    overflow: hidden;
+}
+.banner div{
+    background: url("../images/banner.png") no-repeat center;
+    background-size: cover;
+    width: 414px;
+    height: 200px;
+    padding-top: 70px;
+}
+.banner h3{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.banner p{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.banner p i{
+    font-weight: bold;
+}
+/* Help */
+.help{
+    background-color: #f4f4f4;
+    padding: 38px 24px;
+}
+.help h2{
+    color: #222;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    line-height: 0.6;
+}
+.help-list{
+    display: flex;
+    flex-flow: wrap;
+}
+.help-list li{
+    font-size: 16px;
+    font-family: "Noto Sans KR",sans-serif;
+    color: #222;
+    padding: 32px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 8px);
+    text-align: center;
+}
+.help-list li:nth-child(1){
+    background-image: url("../images/help1.svg");
+}
+.help-list li:nth-child(2){
+    background-image: url("../images/help2.svg");
+}
+.help-list li:nth-child(3){
+    background-image: url("../images/help3.svg");
+}
+.help-list li:nth-child(4){
+    background-image: url("../images/help4.svg");
+}
+.help-list p{
+    width: 100%;
+    font-weight: 600;
+    height: 100%;
+    padding-top: 67px;
+    cursor: pointer;
+
+}
+/* Footer */
+footer {
+    flex: 0 0 auto;
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+footer>p {
+    margin-bottom: 24px;
+    color: #bbb;
+    font-size: 17px;
+    font-weight: 600;
+}
+footer a{
+    color: #bbb;
+    filter: grayscale(1) brightness(1.75);
+}
+.sns{
+    margin-bottom: 15px;
+}
+.sns a{
+    margin-right: 15px;
+}
+.sns a:last-child{
+    margin-right: 0;
+}
+
+footer a img{
+    width: 22px;
+
+}
+footer .copyright {
+    font-size: 15px;
+}
+footer .copyright p:first-child{
+    cursor: pointer;
+}
+footer .copyright strong{
+    font-weight: 600;
+}
+
+footer .copyright p {
+    color: #4c4c4c;
+    margin-bottom: 24px;
+}
+
+footer .copyright p:last-child {
+    font-size: 0.75rem;
+}
+footer .logo{
+    margin-left: 5px;
+    position: static;
+    margin: 0 auto;
+
+}
