@@ -33,7 +33,7 @@ body {
     padding-top: 27px;
     background-color: #000;
     position: fixed;
-    width: 93.9%;
+    width: 94.1%;
     z-index: 100;
 }
 .header > div:first-child{
@@ -72,7 +72,7 @@ input[id="menuicon"]+label  {
     /* 포지션 위치기준값 */
     position: fixed;
     left: 5%;
-    top: 3%;
+    top: 2.5%;
     z-index: 9999;
 }
 /* 파비콘을 사용하지 않고 햄버거 메뉴 만들기 */

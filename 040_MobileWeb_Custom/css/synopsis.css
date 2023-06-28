@@ -3,8 +3,14 @@
 #wrap {
     background: none;
     height: 100%;
+    padding: 0;
 }
-
+header{
+    width: 100% !important;
+}
+footer{
+    padding: 0;
+}
 /* 배경 동영상 */
 video {
     /* 이벤트 페이지 에서 사용  */
