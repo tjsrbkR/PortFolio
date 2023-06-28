@@ -10,6 +10,9 @@ header{
 }
 header>div{
     max-width: 1132px;
+    max-width: 1132px;
+    margin: 15px 2.4%;
+    height: 35px;
 }
 article,main{
     padding: 0 10px;
@@ -17,7 +20,7 @@ article,main{
 article {
     max-width: 1920px;
     margin: 0 auto;
-    padding-top: 67px   ;
+    padding-top: 5%;
 
 }
 article #gallery_wrap {
@@ -81,13 +84,12 @@ article #gallery_wrap .slide_gallery li:nth-child(3) {
 /* 모바일 퍼스트 = 모바일용 공통 스타일 */
 /* 1. Header */
 .header {
-    padding: 18px 5%;
     /* 포지션 위치기준값 */
     position: fixed;
     z-index: 9999;
     width: 100%;
     background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0,0,1);
+    border-bottom: 1px solid #000;
 
 }
 
@@ -95,6 +97,8 @@ article #gallery_wrap .slide_gallery li:nth-child(3) {
 .header .logo {
     /* 플롯 */
     float: left;
+    margin-top: 7px;
+
 }
 
 .header .logo a {
@@ -105,8 +109,8 @@ article #gallery_wrap .slide_gallery li:nth-child(3) {
     font-weight: 500;
 }
 .header .logo img{
-    width: 150px;
-    height: 30px;
+    width: 100px;
+    height: 20px;
 }
 /* GNB */
 .header .gnb {
@@ -226,7 +230,7 @@ article #gallery_wrap .slide_gallery li:nth-child(3) {
 
 .promotion_section .promotion_list li h3 {
     margin: 30px 0 20px;
-    color: #8ceaf6;
+    color: #1d1d1d;
 }
 
 .promotion_section .promotion_list li p {
@@ -311,7 +315,7 @@ article #gallery_wrap .slide_gallery li:nth-child(3) {
     position: absolute;
     left: 30px;
     top: 0;
-    z-index: 200;
+    z-index: 2;
     opacity: 0;
     transition: all 0.3s;
 }
@@ -354,7 +358,7 @@ article #gallery_wrap .slide_gallery li:nth-child(3) {
 .blog_section .blog_list li time {
     display: block;
     font-size: 12px;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: #9e9e9e;
     margin: 10px 0;
 }
@@ -380,7 +384,7 @@ textarea {
     font-size: 12px;
     font-size: 0.75rem;
     font-family: 'Montserrat', sans-serif;
-    color: #8ceaf6;
+    color: #1d1d1d;
 }
 
 /* Input Form */
@@ -404,7 +408,7 @@ textarea {
     font-size: 12px;
     font-size: 0.75rem;
     color: #fff;
-    background: #8ceaf6;
+    background: #1d1d1d;
     padding: 15px;
     cursor: pointer;
 }
@@ -435,12 +439,10 @@ textarea {
 
 /* 태블릿 미디어 쿼리 768px 이상 */
 @media screen and (min-width:768px) {
-    article,main{
-        padding: 0;
-    }
+  
+    
     /* 1. 태블릿 Header */
     .header {
-        padding: 18px 5%;
         /* 포지션 위치기준값 */
         position: fixed;
         z-index: 10;
@@ -452,49 +454,40 @@ textarea {
     .header .logo {
         /* 플롯 */
         float: left;
+        margin-top: 0px;
+    }
+    .header .logo img{
+        width: 150px;
+        height: 30px;
     }
 
     .header .logo a {
         font-size: 26px;
         font-size: 1.625rem;
-        color: #8ceaf6;
+        color: #1d1d1d;
         letter-spacing: -2px;
         font-weight: 500;
     }
 
-    /* 태블릿 GNB */
-    .header .gnb {
-        /* 가로배치 GNB 보이도록 코딩 */
-        /* display: block !important; */
-        /* 모바일 속성값을 초기화 */
-        width: auto;
-        background: none;
-        /* 포지션 */
-        position: static;
-        /* 플롯 */
-        float: right;
-        display: no;
-        color: #000;
-    }
+   
+   
 
     .header .gnb li {
         border-bottom: none;
-        /* 플롯 */
-        float: left;
-        margin-left: 20px;
+        padding: 15px;
     }
-
+   
     .header .gnb li a {
         display: block;
         font-size: 14px;
         font-size: 0.875rem;
-        padding: 5px 0 0 0;
+        padding: 14px 0 14px 5%;
     }
 
     /* Hamberger Toggle */
     .header .menu_toggle_btn {
         width: 20px;
-        margin-top: 4px;
+        margin-top: 8px;
         cursor: pointer;
         /* 플롯 */
         float: right;
@@ -562,7 +555,7 @@ textarea {
 
     .promotion_section .promotion_list li h3 {
         margin: 30px 0 20px;
-        color: #8ceaf6;
+        color: #1d1d1d;
     }
 
     .promotion_section .promotion_list li p {
@@ -640,7 +633,7 @@ textarea {
     .blog_section .blog_list li time {
         display: block;
         font-size: 12px;
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: #9e9e9e;
         margin: 10px 0;
     }
@@ -668,7 +661,7 @@ textarea {
         font-size: 12px;
         font-size: 0.75rem;
         font-family: 'Montserrat', sans-serif;
-        color: #8ceaf6;
+        color: #1d1d1d;
     }
 
     /* 2단 플롯구조 */
@@ -711,7 +704,7 @@ textarea {
         font-size: 12px;
         font-size: 0.75rem;
         color: #fff;
-        background: #8ceaf6;
+        background: #1d1d1d;
         padding: 15px;
         cursor: pointer;
     }
@@ -745,7 +738,9 @@ textarea {
 
 /* PC 미디어 쿼리 1132px 이상 */
 @media screen and (min-width:1132px) {
-
+    article,main{
+        padding: 0;
+    }
     /* 3-1. PC Display */
     .header{
         width: 100%;
@@ -754,14 +749,32 @@ textarea {
     .header > div{
         width: 100%;
         height: 40px;
-        margin: 0 auto;
+        margin: 15px auto;
     }
-    .header .gnb{
+    .header .gnb {
+        display: block !important;
+        background: none;
+        float: right;
         color: #000;
-        display: block;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: auto;
+        position: inherit;
+        margin-top: 5px;
+     
+    }
+    .header .logo{
+        margin-top: 7px;
+    }
+    .header .gnb li{
+        float: left;
+        width: auto;
+        margin-left: 20px;
+        padding-top: 0;
+    }
+    .header .gnb li:hover{
+        background:none;
+    }
+    .header .gnb li a{
+        padding: 0;
     }
     .header .menu_toggle_btn{
         display: none;
@@ -832,7 +845,7 @@ textarea {
 
     .promotion_section .promotion_list li h3 {
         margin: 30px 0 20px;
-        color: #8ceaf6;
+        color: #1d1d1d;
     }
 
     .promotion_section .promotion_list li p {
@@ -922,7 +935,7 @@ textarea {
     .blog_section .blog_list li time {
         display: block;
         font-size: 12px;
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: #9e9e9e;
         margin: 10px 0;
     }
@@ -951,7 +964,7 @@ textarea {
         font-size: 12px;
         font-size: 0.75rem;
         font-family: 'Montserrat', sans-serif;
-        color: #8ceaf6;
+        color: #1d1d1d;
     }
 
     /* 선택자 추가 */
@@ -1003,7 +1016,7 @@ textarea {
         font-size: 12px;
         font-size: 0.75rem;
         color: #fff;
-        background: #8ceaf6;
+        background: #1d1d1d;
         padding: 15px;
         cursor: pointer;
     }
@@ -1023,5 +1036,13 @@ textarea {
         background-image: url("../img/mainSliderImg3.jpg");
         background-repeat: no-repeat;
         background-position: center;
+    }
+}
+
+/* 모바일 footer 추가 css  */
+
+@media screen and (max-width:406px){
+    footer p {
+        font-size: 0.5rem !important;
     }
 }

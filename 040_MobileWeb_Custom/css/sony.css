@@ -7,16 +7,18 @@ body {
 #wrap {
     width: 100%;
     overflow: hidden;
+    padding: 0 3%;
     
 }
 .bg-video{
     position: absolute;
-    bottom: -82%;
+    bottom: -34%;
     left: 0;
-    height: 66%;
+    height: 51.5%;
     width: 100%;
     z-index: -1;
     opacity: 7;
+    padding: 0 3%;
 }
 
 .bg-video__content{
@@ -28,9 +30,10 @@ body {
 /* Header */
 .header {
     padding: 24px;
+    padding-top: 27px;
     background-color: #000;
     position: fixed;
-    width: 100%;
+    width: 93.9%;
     z-index: 100;
 }
 .header > div:first-child{
@@ -175,13 +178,10 @@ input[id="menuicon"]:checked+label+.mobile_gnb {
     font-weight: 400;
     cursor: default;
 }
-main{
-    padding: 0 10px;
-    overflow: hidden;
-}
 /* Contents */
 #contents {
     width: 100%;
+    padding-top: 50px;
 }
 /* 메인 슬라이더 영역 */
 .slide{
@@ -191,7 +191,7 @@ main{
 /* 텍스트 공통 */
 .text-box{
     position: absolute;
-    font-size: 50px;
+    font-size: 46px;
     color: #fff;
     width: 100%;
     left: 5%;
@@ -218,6 +218,7 @@ main{
 }
 .event-box{
     margin: 0 auto;
+    overflow: hidden;
 }
 .event>h2{
     margin-bottom: 25px;
@@ -232,9 +233,8 @@ main{
 }
 
 .event-contents{
-    margin: 0 auto;
     padding: 44px 16px;
-    width: 366px;
+    width: 100%;
     height: 510px;
     background-image: url("../images/eventImg.jpg");
     background-size: cover;
@@ -254,14 +254,16 @@ main{
     margin-top: 70px;
     margin-bottom: 60px;
     overflow: hidden;
+    position: relative;
 }
 .event-sub-swiper .swiper .swiper-slide img{
     width: 100%;
     height: 100%;
 }
 .swiper {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 380px;
+    padding-bottom: 50px;
 }
 .event-sub-swiper .swiper{
     position: relative;
@@ -290,32 +292,51 @@ main{
 .event-sub-swiper .swiper h2{
     font-size: 25px;
     position: absolute;
-    left: 6%;
+    left: 20%;
     bottom: 17%;
     text-align: left;
     font-weight: 600;
     line-height: 1.25;
 
 }
+.event-swiper-img-box1 h2{
+    left: 26% !important; 
+}
 .event-sub-swiper .swiper  p{
     font-size: 12px;
     position: absolute;
     text-align: left;
-    left: 6%;
+    left: 27%;
     bottom: 7%;
     color: #666;
     line-height: 1.5;
 }
-.event-swiper-img-box3 p{
-    bottom: 3% !important;
+.event-swiper-img-box2 p{
+    left: 20% !important;
 }
-.swiper-scrollbar{
+.event-swiper-img-box3 p{
+    left: 6% !important;
+}
+.event-sub-swiper .swiper-scrollbar{
+    height: 3px;
+    position: absolute;
+    left: 8%;
+    width: 80%;
+    bottom: 0%;
+    z-index: 10;
+    display: block;
+    opacity: 1;
+}
+
+.product .swiper-scrollbar{
     height: 3px;
     position: absolute;
     left: 8%;
     width: 80%;
     bottom: -10%;
     z-index: 10;
+    display: block;
+    opacity: 1;
 }
 .swiper-pagination{
     color: #fff;
@@ -463,16 +484,18 @@ main{
 
 }
 /* Footer */
-footer {
+footer{
+    padding: 0 3%;
+}
+footer>div{
     flex: 0 0 auto;
     background-color: #000;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 3%;
     text-align: center;
-    opacity: 0.8;
+    opacity:1;
 }
 
-footer>p {
+footer>div>p {
     margin-bottom: 24px;
     color: #bbb;
     font-size: 17px;

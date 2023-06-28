@@ -34,7 +34,6 @@ var swiper2 = new Swiper('.swiper', {
     slidesPerView: 1,
     /* b. 슬라이드 사이 간격 */
     spaceBetween: '12%',
-
     scrollbar: {
         el: '.swiper-scrollbar',
     },
@@ -48,6 +47,7 @@ var swiper2 = new Swiper('.swiper', {
         type: 'fraction',
     },
     // freeMode: true,
+
 });
 
 var swiper3 = new Swiper('.swiper-product', {
@@ -70,7 +70,6 @@ var swiper3 = new Swiper('.swiper-product', {
     },
     on: {
         slideChange: function () {
-            //이벤트 또는 조건문으로 이용하면 된다.
             $(".product .swiper-scrollbar").css({ opacity: "1" });
             setTimeout(() => {
                 if ($(".product .swiper-scrollbar").css({ opacity: "1" })) {

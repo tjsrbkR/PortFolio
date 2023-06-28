@@ -91,7 +91,7 @@ header div {
 #gnb li a {
     display: block;
     width: 200px;
-    color: #222;
+    color: #fff;
     font: bold 18px/3 "play", sans-serif;
     text-align: center;
     padding-left: 40px;
