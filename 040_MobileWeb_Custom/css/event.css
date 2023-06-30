@@ -82,30 +82,40 @@ main{
 /* contents */
 .tab{
     margin-top: 15px;
-    margin-left: 5px;
 }
 .tab ul li{
-    float: left;
+
     width: 109px;
     text-align: center;
     padding: 20px 0;
     color: #666;
-    border-bottom: 1px solid#666;
 }
 .tab ul{
+    display: flex;
+    border-bottom: 1px solid#666;
+    justify-content: space-between;
+    align-self: center;
+
 }
 .on{
     color: #5865F5 !important;
     border-bottom: 2px solid #5865F5 !important;
     z-index: 1;
 }
-.tab+button{
+.button{
+    width: 100%;
+    margin: 40px 0 30px ;
+    display: flex;
+    justify-content: end;
+    
+}
+.button p{
+    /* color: #fff; */
     color: #fff;
-    line-height: 32px;
-    background-color: #222;
-    padding: 0 10px;
-    margin: 40px 0 30px 227px;
+    background-color: #000;
+    padding: 15px 30px;
     font-size: 14px;
+    width: 150px;
 }
 .event-list-title{
     display: flex;
