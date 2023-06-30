@@ -1,0 +1,259 @@
+.member{
+    padding: 33px 0 50px 0;
+    background-image: url("../images/service/main-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.title-box {
+    padding-top: 204px;
+}
+.member .title-box  h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -.5px;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 16px;
+}
+.member .title-box h2{
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 36px;
+}
+.member .title-box .desc{
+    margin: 0 auto;
+    width: 70%;
+    font-size: 14px;
+    line-height: 22px;
+    color: #bbb;
+}
+.member .line-box {
+    margin:170px 24px 0;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    
+}
+.member .line-box .txt{
+    padding: 35px 0 65px;
+    font-size: 14px;
+    line-height: 1;
+    background: url(data:image/png;base64,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) no-repeat 0 0;
+    background-position: bottom;
+    text-align: center;
+    font-weight: 200;
+}
+.member .line-box .txt strong{
+    display: block;
+    margin-top: 18px;
+    font-weight: 700;
+}
+.member .line-box .txt strong span{
+    position: relative;
+    font-weight: 700;
+}
+.member .line-box .txt strong span::before{
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    content: "";
+    background: #ffde3f;
+    border-radius: 100%;
+    transform: translateX(-50%);
+}
+.member .line-box .txt strong span::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    border-bottom: 1px solid #707070;
+}
+/* 메인 탭 메뉴 */
+.tab{
+    margin-bottom: 40px;
+}
+main{
+    text-align: center;
+}
+main .mileage-info{
+    background-image: url("../images/service/mile.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .mileage-info .mileage-info-inner{
+    margin: 0 24px;
+    padding-top: 64px;
+    padding-bottom: 150px;
+}
+main .mileage-info .mileage-info-inner h4{
+    font-weight: 700;
+}
+main .mileage-info .mileage-info-inner p{
+    font-size: 14px;
+    margin-top: 40px;
+    color: #222;
+    line-height: 1.8;
+}
+main .mileage-info .mileage-info-inner p span{
+    color: #5865f5;
+    font-weight: 700;
+}
+main .mileage-info .mileage-info-inner .message{
+    font-size: 12px;
+    color: #888;
+
+}
+/* 멤버쉽 */
+.membership{
+    letter-spacing: -.025em;
+    margin-top: 24px;
+    border-top: 2px solid #222;
+    margin-bottom: 60px;
+}
+.membership-info{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.membership-info-img{
+    padding: 24px;
+    width: 35%;
+    text-align: center;
+    vertical-align: middle;
+}
+.membership-info-img p{
+    width: 100%;
+    margin-top: 10px;
+}
+.membership-info-text{
+    width: 65%;
+    padding: 24px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.membership-info-text p{
+    line-height: 1.5;
+}
+.membership-info-text p:last-child{
+    margin-top: 20px;
+}
+.membership-info-text strong{
+    font-weight: 700;
+}
+/* 마일리지 채팅 */
+.mileage-chat{
+    padding: 64px 25px;
+    margin-bottom: 40px;
+    background-image: url("../images/service/chat.png");
+    color: #fff;
+    background-position: center;
+}
+.mileage-chat h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+.message-txt {
+    text-align: left;
+}
+.message-txt p{
+    padding: 13px 24px;
+    font-size: 12px;
+    line-height: 18px;
+    background: #4e5172;
+    display: inline-block;
+    margin: 16px 0 10px;
+    border-radius: 80px;
+}
+.message-txt-answer{
+    text-align: right;
+}
+.message-txt-answer p{
+    padding: 13px 24px;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+    margin: 16px 0 10px;
+    background-color: #5865f5;
+    border-radius: 80px;
+}
+
+.message-txt-answer p span{
+    color: #ff0;
+    font-weight: 700;
+}
+/* 마일리지 사용법 */
+.use-mileage {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 24px;
+    line-height: 24px;
+}
+.use-mileage span{
+    color: #5865f5;
+    font-weight: 700;
+}
+.use-mileage .small-massage{
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    margin-top: 24px;
+}
+.use-mileage .small-massage strong{
+    font-weight: 700;
+    color: #444;
+}
+
+/* 마일리지 사용법  */
+.mileage-how-to-use{
+    text-align: center;
+    margin: 64px 20px;
+}
+.mileage-how-to-use h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.mileage-how-to-use .mileage-use-list {
+    display: flex;
+    justify-content: space-between;
+}
+.mileage-how-to-use .mileage-use-list li{
+    padding: 100px 15px 20px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    line-height: 18px;
+    width: calc(50% - 4px);
+    font-weight: 700;
+}
+.mileage-how-to-use .mileage-use-list li:nth-child(1){
+    background: url("../images/service/how1.svg") no-repeat 50% 24px;
+}
+.mileage-how-to-use .mileage-use-list li:nth-child(2){
+    background: url("../images/service/how2.svg") no-repeat 50% 24px;
+
+}
+.mileage-how-to-use .mileage-use-info{
+    font-size: 14px;
+    margin-top: 24px;
+    line-height: 22px;
+}
+.mileage-how-to-use .mileage-use-info span{
+    color: #5865f5;
+    font-weight: 700;
+}
+.mileage-how-to-use .small-massage{
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    margin-top: 24px;
+    
+}

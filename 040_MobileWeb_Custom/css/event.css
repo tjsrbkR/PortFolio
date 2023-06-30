@@ -80,28 +80,8 @@ main{
 
 /* end slide */
 /* contents */
-.tab{
-    margin-top: 15px;
-}
-.tab ul li{
-    cursor: pointer;
-    width: 109px;
-    text-align: center;
-    padding: 20px 0;
-    color: #666;
-}
-.tab ul{
-    display: flex;
-    border-bottom: 1px solid#666;
-    justify-content: space-between;
-    align-self: center;
 
-}
-.on{
-    color: #5865F5 !important;
-    border-bottom: 2px solid #5865F5 !important;
-    z-index: 1;
-}
+
 .button{
     width: 100%;
     margin: 40px 0 30px ;

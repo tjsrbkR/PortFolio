@@ -8,3 +8,24 @@
 body{
     font-family: "Noto Sans KR",sans-serif;
 }
+.on{
+    color: #5865F5 !important;
+    border-bottom: 2px solid #5865F5 !important;
+    z-index: 1;
+}
+.tab{
+    margin-top: 15px;
+}
+.tab ul li{
+    cursor: pointer;
+    width: 109px;
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+}
+.tab ul{
+    display: flex;
+    border-bottom: 1px solid#ccc;
+    justify-content: space-between;
+    align-self: center;
+}
