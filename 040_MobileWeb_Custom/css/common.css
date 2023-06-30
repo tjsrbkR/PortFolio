@@ -1,0 +1,10 @@
+#wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.safe{
+    padding: 0 5%;
+}
+body{
+    font-family: "Noto Sans KR",sans-serif;
+}

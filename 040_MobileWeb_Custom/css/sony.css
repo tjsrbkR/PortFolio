@@ -4,12 +4,7 @@ body {
     /* font-family: "Noto Sans", sans-serif; */
 }
 
-#wrap {
-    width: 100%;
-    overflow: hidden;
-    padding: 0 3%;
-    
-}
+
 .bg-video{
     position: absolute;
     bottom: -34%;
@@ -18,7 +13,7 @@ body {
     width: 100%;
     z-index: -1;
     opacity: 7;
-    padding: 0 3%;
+    padding: 0 5%;
 }
 
 .bg-video__content{
@@ -27,157 +22,6 @@ body {
     object-fit: cover;
 }
 
-/* Header */
-.header {
-    padding: 24px;
-    padding-top: 27px;
-    background-color: #000;
-    position: fixed;
-    width: 94.1%;
-    z-index: 100;
-}
-.header > div:first-child{
-    /* 포지션 위치기준값 */
-    position: relative;    
-}
-/* 로고 */
-.logo{
-    width: 87px;
-    height: 16px;
-    position:absolute;
-    left: 38%;
-
-}
-.logo img{
-    width: 100%;
-    height: 100%;
-}
-
-/* 
-===============================================================================
-    모바일 햄버거 메뉴 효과
-===============================================================================
-*/
-/* A. 햄버거 메뉴 그리기 */
-/* 속성 선택자로 체크박스 스타일링 */
-input[id="menuicon"] {
-    display: none;
-}
-
-input[id="menuicon"]+label  {
-    display: block;
-    width: 24px;
-    height: 14px;
-    cursor: pointer;
-    /* 포지션 위치기준값 */
-    position: fixed;
-    left: 5%;
-    top: 2.5%;
-    z-index: 9999;
-}
-/* 파비콘을 사용하지 않고 햄버거 메뉴 만들기 */
-input[id="menuicon"]+label span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    /* 포지션 */
-    position: absolute;
-    z-index: 1;
-    transition: all 0.3s;
-}
-
-input[id="menuicon"]+label span:nth-child(1) {
-    top: 0;
-}
-
-input[id="menuicon"]+label span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-input[id="menuicon"]+label span:nth-child(3) {
-    bottom: 0;
-}
-
-/* B. 햄버거클릭시 X 버튼 만들기 */
-/* input을 클릭하면 첫번째 햄버거의 위치를 50% 이동시키고 45도 회전 */
-input[id="menuicon"]:checked+label span:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-}
-
-input[id="menuicon"]:checked+label span:nth-child(2) {
-    opacity: 0;
-}
-
-input[id="menuicon"]:checked+label span:nth-child(3) {
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
-}
-
-
-/* C. GNB 메뉴 슬라이딩 효과 */
-.header nav[class="mobile_gnb"] {
-    width: 250px;
-    height: 100%;
-    background-color: #000;
-    color: #fff;
-    /* 포지션 */
-    position: fixed;
-    left: -250px;
-    top: 0;
-    z-index: 90;
-    transition: all 0.3s;
-}
-
-input[id="menuicon"]:checked+label+.mobile_gnb {
-    /* transform: translateX(250px); */
-    left: 0;
-}
-
-
-/* 햄버거 클릭시 보이는 GNB 메뉴 */
-
-.header .mobile_gnb {
-    padding: 64px 0 0 0;
-    font-family: "Lato", sans-serif;
-    font-size: 0.8rem;
-}
-
-.header .mobile_gnb .gnb>li {
-    height: 42px;
-    line-height: 42px;
-    padding-left: 24px;
-}
-
-.header .mobile_gnb .gnb>li:hover {
-    background-color: #fff;
-}
-
-.header .mobile_gnb .gnb>li>a {
-    display: block;
-    color: #fff;
-}
-
-.header .mobile_gnb .gnb>li>a:hover {
-    color: #000;
-    font-weight: 700;
-}
-
-
-/* 추가 코딩 */
-.header nav[class="mobile_gnb"] li:last-child:hover {
-    background: none;
-    cursor: default;
-}
-
-.header nav[class="mobile_gnb"] li:last-child a:hover {
-    background: none;
-    color: #fff;
-    font-weight: 400;
-    cursor: default;
-}
 /* Contents */
 #contents {
     width: 100%;
@@ -417,7 +261,8 @@ input[id="menuicon"]:checked+label+.mobile_gnb {
 .banner div{
     background: url("../images/banner.png") no-repeat center;
     background-size: cover;
-    width: 414px;
+    background-position: center;
+    width: 100%;
     height: 200px;
     padding-top: 70px;
 }
@@ -481,65 +326,5 @@ input[id="menuicon"]:checked+label+.mobile_gnb {
     height: 100%;
     padding-top: 67px;
     cursor: pointer;
-
-}
-/* Footer */
-footer{
-    padding: 0 3%;
-}
-footer>div{
-    flex: 0 0 auto;
-    background-color: #000;
-    padding: 30px 3%;
-    text-align: center;
-    opacity:1;
-}
-
-footer>div>p {
-    margin-bottom: 24px;
-    color: #bbb;
-    font-size: 17px;
-    font-weight: 600;
-}
-footer a{
-    color: #bbb;
-    filter: grayscale(1) brightness(1.75);
-}
-.sns{
-    margin-bottom: 15px;
-}
-.sns a{
-    margin-right: 15px;
-}
-.sns a:last-child{
-    margin-right: 0;
-}
-
-footer a img{
-    width: 22px;
-
-}
-footer .copyright {
-    font-size: 15px;
-}
-footer .copyright p:first-child{
-    cursor: pointer;
-}
-footer .copyright strong{
-    font-weight: 600;
-}
-
-footer .copyright p {
-    color: #4c4c4c;
-    margin-bottom: 24px;
-}
-
-footer .copyright p:last-child {
-    font-size: 0.75rem;
-}
-footer .logo{
-    margin-left: 5px;
-    position: static;
-    margin: 0 auto;
 
 }

@@ -440,6 +440,7 @@ header .img_deco button a {
 .answer{
     font-size: 15px;
     line-height: 1.5;
+    margin-left: 18px;
 }
 .question_box{
     display: flex;
@@ -534,7 +535,7 @@ header .img_deco button a {
     width: 510px;
 }
 .footer .footer_logo img{
-    width: 100%;
+    width: 36%;
 }
 .footer_logo dt {
     margin-bottom: 24px;
