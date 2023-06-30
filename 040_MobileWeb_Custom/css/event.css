@@ -84,7 +84,7 @@ main{
     margin-top: 15px;
 }
 .tab ul li{
-
+    cursor: pointer;
     width: 109px;
     text-align: center;
     padding: 20px 0;
