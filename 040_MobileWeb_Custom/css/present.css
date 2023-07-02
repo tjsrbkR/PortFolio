@@ -1,0 +1,35 @@
+#wrap{
+    padding: 60px 0;
+    text-align: center;
+}
+.contents img{
+    width: 100%;
+}
+.notice{
+    text-align: left;
+    padding: 30px 6.25vw 0;
+}
+.notice h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: -0.6px;
+}
+.notice p{
+    color: #666;
+    position: relative;
+    line-height: 1.5;
+    padding-left: 8px;
+}
+.notice p::before{
+    content: "·";
+    position: absolute;
+    left: 0;
+}
+.notice+button{
+    color: #fff;
+    background-color: #222;
+    margin-top: 70px;
+    width: 150px;
+    height: 48px;
+}

@@ -1,0 +1,45 @@
+#wrap{
+    padding-top: 60px;
+}
+.faq-notice{
+    text-align: center;
+    background-color: #f4f7fa;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.faq-notice .faq-notice-text h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 24px;
+}
+.faq-notice .faq-notice-text p {
+    font-size: 14px;
+    color: #888;
+    line-height: -0.4px;
+    line-height: 1.3;
+}
+.faq-notice .faq-notice-select{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.on{
+    background: #5865f5 !important;
+    color: #fff !important;
+}
+.select-item{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #bbb;
+    background-color: #fff;
+    width: 110px;
+    height: 82px;
+    vertical-align: middle;
+    margin-right: 15px;
+
+}
+.select-item:last-child{
+    margin-right: 0;
+}

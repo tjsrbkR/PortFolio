@@ -113,9 +113,9 @@ main .mileage-info .mileage-info-inner .message{
 /* 멤버쉽 */
 .membership{
     letter-spacing: -.025em;
-    margin-top: 24px;
+    margin: 24px 24px 60px;
     border-top: 2px solid #222;
-    margin-bottom: 60px;
+
 }
 .membership-info{
     display: flex;
@@ -256,4 +256,224 @@ main .mileage-info .mileage-info-inner .message{
     color: #666;
     margin-top: 24px;
     
+}
+
+/* 서비스 탭메뉴 */
+.premium{
+    margin: 0 24px 64px;
+    padding-top: 64px;
+    text-align: center;
+    background-color: #f4f7fa;
+    padding: 64px 24px 40px;
+    
+}
+.premium h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+.premium > p{
+    font-size: 14px;
+    color: #222;
+    margin: 36px 0;
+    line-height: 1.5;
+    letter-spacing: -.025em;
+}
+.premium > p span{
+    color: #5865f5;
+    font-weight: 700;
+}
+.service-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-menu-item{
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: -.025em;
+    color: #222;
+    border-radius: 20px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    height: calc(50vw - 52px);
+    min-height: 140px;
+    padding-top: 4vw;
+    flex-basis: calc(50% - 4px);
+    background-position: 50% calc(50% + 28px);
+}
+.service-menu-item:first-child{
+    background-image: url("../images/service/gift1.svg");
+}
+.service-menu-item:nth-child(2){
+    background-image: url("../images/service/gift2.svg");
+}
+.service-menu-item:nth-child(3){
+    background-image: url("../images/service/gift3.svg");
+    margin-top: 8px;
+}
+.service-menu-item:nth-child(4){
+    background-image: url("../images/service/gift4.svg");
+    margin-top: 8px;
+}
+.service-menu-item h5{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 0.2em;
+    letter-spacing: -.025em;;
+    line-height: 1.5;
+}
+
+/* 서비스 목록 */
+.service-list{
+    text-align: left;
+    margin: 64px 24px 0;
+
+}
+.service-list:first-child{
+    margin-top: 0;
+}
+.service-list:last-child{
+    margin-bottom: 60px;
+}
+.service-pic{
+    width: 366px;
+    height: auto;
+}
+.service-pic img{
+    width: 100%;
+    height: 100%;
+}
+.service-list h4{
+    margin: 1.5em 0 0.5em;;
+    font-size: 20px;
+    font-weight: 700;
+}
+.service-list p{
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+}
+.service-list p span{
+    color: #5865f5;
+    font-weight: 700;
+}
+.service-list .small-massage{
+    font-size: 12px;
+    color: #666;
+    margin-top: 1.4rem;
+}
+.service-list .more{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.service-list .more i{
+    font-weight: 700;
+}
+
+/* 쿠폰 영역 */
+.cupone-box{
+    padding: 0 24px 60px;
+    position: relative;
+
+}
+.cupone-inner{
+    margin-top: 40px;
+    text-align: left;
+    position: relative;
+    padding: 21px 10px 24px 23px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 64px);
+}
+.cupone-inner span{
+    color: #5865f5;
+    font-weight: 700;
+}
+.cupone-inner .top .small-massage{
+    font-size: 12px;
+    color: #888;
+}
+.cupone-inner .top h5{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 5px;
+}
+.cupone-inner .top p:last-child{
+    font-size: 12px;
+    color: #222;
+    letter-spacing: -0.35px;
+    line-height: 18px;
+
+}
+
+.cupone-inner .bottom {
+    margin-top: 40px;
+    font-size: 12px;
+}
+.cupone-inner .bottom ul{
+    display: flex;
+}
+.cupone-inner .bottom ul li{
+    line-height: 18px;
+}
+.cupone-inner .bottom ul li:first-child{
+    width: 20%;
+}
+.cupone-inner .bottom ul li:last-child{
+    width: 72%;
+}
+.cupone-inner:after {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: -22%;
+    width: 90px;
+    height: 100%;
+    border-radius: 4px;
+    background: #5865f5;
+    content: "";
+    width: 70px;
+}
+.cupone-perforated-line{
+    position: absolute;
+    right: -43%;
+    z-index: 10;
+    top: 50%;
+    line-height: 33px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    opacity: .15;
+    transform: translateY(-50%) rotate(90deg);
+    color: #fff !important;
+    text-align: center;
+}
+.cupone-box .waring{
+    text-align: left;
+    margin-top: 30px;
+}
+.cupone-box .waring p{
+    padding-left: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    background: url("../images/service/waring.svg") no-repeat 0 50%;
+    background-size: 14px 14px;
+    margin-bottom: 5px;
+}
+.cupone-box .waring ul li{
+    font-size: 12px;
+    color: #888;
+    line-height: 22px;
+    padding-left: 8px;
+    letter-spacing: -1px;
+    position: relative;
+}
+.cupone-box .waring ul li::before{
+    content: "·";
+    position: absolute;
+    left: 0;
 }
