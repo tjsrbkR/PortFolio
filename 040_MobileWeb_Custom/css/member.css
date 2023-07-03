@@ -440,7 +440,7 @@ main .mileage-info .mileage-info-inner .message{
 }
 .cupone-perforated-line{
     position: absolute;
-    right: -43%;
+    right: -40%;
     z-index: 10;
     top: 50%;
     line-height: 33px;
