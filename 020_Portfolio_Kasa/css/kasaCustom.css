@@ -611,17 +611,23 @@ main{
 }
 .caxa_sns ul li:hover .worldImg+div {
     opacity: 0.7;
-  
+}
 
-}
-.caxa_sns ul:nth-child(2) .worldImg+div{
-}
 .world-text p{
     font-size: 18px;
     margin-bottom: 15px;
+    padding: 0 10px;
+
 }
 .world-text h5{
     font-size: 15px;
+}
+.text-bg+.close{
+    position: absolute;
+    right: -70%;
+    top: 0;
+    color: #fff;
+    cursor: pointer;
 }
 
 
