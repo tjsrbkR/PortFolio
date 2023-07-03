@@ -141,14 +141,14 @@ input[id="menuicon"]:checked+label+.mobile_gnb {
 
 
 /* 추가 코딩 */
-.header nav[class="mobile_gnb"] li:last-child:hover {
+/* .header nav[class="mobile_gnb"] li:last-child:hover {
     background: none;
     cursor: default;
-}
+} */
 
-.header nav[class="mobile_gnb"] li:last-child a:hover {
+/* .header nav[class="mobile_gnb"] li:last-child a:hover {
     background: none;
     color: #fff;
     font-weight: 400;
     cursor: default;
-}
+} */
