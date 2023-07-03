@@ -13,10 +13,10 @@ $("figure").find("i").css({
     color: "#fff"
 });
 $("figure").find("button").eq(0).css({
-    right: "540px"
+    right: "350px"
 });
 $("figure").find("button").eq(1).css({
-    right: "470px"
+    right: "300px"
 });
 
 // Video 제어 스크립트
