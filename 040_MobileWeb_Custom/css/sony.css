@@ -122,8 +122,6 @@ body {
 
 
 }
-.event-sub-swiper .swiper .swiper-wrapper .swiper-slide h2{
-}
 .event-swiper-img-box1{
     background-image:url("../images/event-slider1.jpg") ;
 }
@@ -190,7 +188,7 @@ body {
 
 }
 .event a:last-child{
-    font-size: 13px;
+    font-size: 16px;
 }
 .event a i{
     font-weight: 100;
