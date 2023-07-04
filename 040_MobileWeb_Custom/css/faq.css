@@ -45,10 +45,9 @@
     margin-right: 0;
 }
 .faq-notice-inner{
-    padding: 0 24px;
+    padding: 24px 24px;
 }
 .faq-selected {
-    padding: 24px;
     padding-bottom: 0;
 }
 .faq-selected nav ul {
@@ -69,9 +68,10 @@
 .qna{
     margin-top: 24px;
     border-top: 2px solid #222;
+    padding: 0 0px 0 10px ;
 }
 .question{
-    padding: 18px 30px 19px 0;
+    padding: 18px 0 19px 0;
     color: #444;
     font-size: 14px;
     font-weight: 700;

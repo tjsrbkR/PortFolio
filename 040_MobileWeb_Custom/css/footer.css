@@ -38,9 +38,6 @@ footer .footer__legal__warning p {
     left: 0;
     top: 58%;
 }
-.footer__legal__warning strong{
-    font-weight: 900;
-}
 footer a{
     color: #bbb;
     filter: grayscale(1) brightness(1.75);
@@ -64,6 +61,7 @@ footer .copyright {
 }
 footer .copyright p:first-child{
     cursor: pointer;
+    margin-top: 45px;
     font-size: 14px;
 }
 footer .copyright strong{

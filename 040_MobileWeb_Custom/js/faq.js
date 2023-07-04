@@ -3,7 +3,7 @@ let mainQuestion = document.querySelector(".qna");
 for (let i = 0; i < qnaAry.length; i++) {
     mainQuestion.innerHTML += `
     <div class="question">
-        Q. ${qnaAry[i].question}
+        Q.&nbsp;&nbsp; ${qnaAry[i].question}
         <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
         <div class="answer answer-none">
         ${qnaAry[i].answer}
